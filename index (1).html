@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayan Chanh-Mohammad – Portfolio BTS SIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--paper:#f4f6f9;--card:#fff;--text:#1f2937;--muted:#5b6678;--teal:#0f766e;--sun:#f2b134;--line:#d8dee8;--side:#14213d;--sidetext:#dfe6f2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#e8edf7;--paper:#0e1526;--card:#16203a;--text:#dbe3f1;--muted:#9aa7bf;--teal:#4fd1c5;--line:#2a3658;--side:#0a1020;--sidetext:#cdd7ea}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);line-height:1.1;margin:0 0 .5em}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+nav{background:var(--side);color:var(--sidetext);padding:28px 20px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav .brand{font:800 19px "Bricolage Grotesque",sans-serif;color:#fff;margin-bottom:4px}
+nav .sub{font-size:14px;opacity:.75;margin-bottom:24px}
+nav a{display:block;color:var(--sidetext);text-decoration:none;padding:8px 12px;border-radius:6px;border-left:3px solid transparent;font-size:16px}
+nav a:hover{background:rgba(255,255,255,.07)}
+nav a[aria-current="page"]{border-left-color:var(--sun);background:rgba(255,255,255,.1);color:#fff;font-weight:600}
+main{padding:56px clamp(20px,5vw,72px);max-width:960px;width:100%}
+section{display:none}
+section.on{display:block}
+.hero h1{font-size:clamp(44px,8vw,96px);font-weight:800;letter-spacing:-.03em;margin-bottom:.15em}
+.hero .role{font-size:22px;color:var(--teal);font-weight:600;margin-bottom:20px}
+.hero p{max-width:60ch}
+h2{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.02em}
+h3{font-size:22px;font-weight:700;margin-top:1.4em}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:600;margin:6px 8px 6px 0}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:14px 0}
+.card h3{margin-top:0}
+.meta{color:var(--muted);font-size:15px;margin:-4px 0 10px}
+.todo{background:rgba(242,177,52,.18);border-left:4px solid var(--sun);padding:8px 12px;border-radius:4px;font-size:15px}
+.tl{border-left:3px solid var(--teal);padding-left:20px;margin-left:6px}
+.tl .it{margin-bottom:22px;position:relative}
+.tl .it::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--sun);border:2px solid var(--teal)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:10px 0}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:15px}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:15px}
+th,td{border:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}
+th{background:var(--ink);color:var(--paper)}
+.wrap{overflow-x:auto}
+ul{padding-left:1.2em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+footer{margin-top:60px;color:var(--muted);font-size:14px}
+@media (max-width:820px){.layout{grid-template-columns:1fr}nav{position:static;height:auto;display:flex;flex-wrap:wrap;gap:4px;padding:14px}nav .brand,nav .sub{width:100%;margin:0}nav a{padding:6px 10px;font-size:15px;border-left:0;border-bottom:3px solid transparent}nav a[aria-current="page"]{border-bottom-color:var(--sun)}main{padding-top:30px}}
+@media print{nav{display:none}section{display:block!important}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav aria-label="Rubriques">
+  <div class="brand">Rayan Chanh-Mohammad</div>
+  <div class="sub">Portfolio BTS SIO – E5</div>
+  <a href="#accueil">Accueil</a>
+  <a href="#parcours">Parcours et projet pro</a>
+  <a href="#entreprise">Entreprise / Stage</a>
+  <a href="#missions">Missions</a>
+  <a href="#projets">Projets</a>
+  <a href="#competences">Compétences</a>
+  <a href="#synthese">Tableau de synthèse</a>
+  <a href="#veille">Veille technologique</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+  <a href="#mentions">Mentions légales</a>
+</nav>
+<main>
+
+<section id="accueil" class="hero on">
+  <h1>Rayan Chanh-Mohammad</h1>
+  <div class="role">Étudiant en BTS SIO option SLAM – Lycée Robert Schuman, Dugny</div>
+  <p>Étudiant motivé, rigoureux et passionné d'informatique, je recherche une alternance pour la rentrée 2026 (2 jours en école, 3 jours en entreprise). Ce portfolio rassemble mon parcours, mes missions en entreprise, mes projets, mes compétences et ma veille technologique.</p>
+  <p><a class="btn" href="#projets">Voir mes projets</a><a class="btn alt" href="#cv">Consulter mon CV</a></p>
+  <div class="todo">À compléter : ajoute une photo professionnelle.</div>
+</section>
+
+<section id="parcours">
+  <h2>Mon parcours et mon projet professionnel</h2>
+  <div class="tl">
+    <div class="it"><h3>BTS SIO – Lycée Robert Schuman, Dugny</h3><div class="meta">2024 – 2026</div><p>Option : SLAM (Solutions Logicielles et Applications Métiers).</p></div>
+    <div class="it"><h3>Baccalauréat général – Henri Wallon</h3><div class="meta">Juillet 2024</div><p>Spécialités : <em>à compléter</em>.</p></div>
+    <div class="it"><h3>Brevet des collèges</h3><div class="meta">Juillet 2021</div></div>
+  </div>
+  <h3>Projet professionnel</h3>
+  <p><strong>Métier visé :</strong> développeur data et IA, idéalement dans le secteur bancaire.</p><p><strong>Poursuite d'études :</strong> bachelor ou licence professionnelle en développement et data, en alternance (2 jours en école, 3 jours en entreprise).</p><p><strong>Pourquoi :</strong> mon stage chez Acceniom Consulting, sur la migration de données bancaires avec SQL, et ma veille sur les GPU et l'IA m'ont montré cette direction.</p>
+</section>
+
+<section id="entreprise">
+  <h2>Mon entreprise – Stage</h2>
+  <div class="card">
+    <h3>Acceniom Consulting, Paris</h3>
+    <div class="meta">Stagiaire – depuis mai 2026</div>
+    <p>Société de conseil. Ma mission de consulting porte sur le traitement de données de banques étrangères en Europe, dans le cadre d'un projet de fusion et de migration.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Fiche entreprise</h3><ul><li>Activité : conseil</li><li>Localisation : Paris</li><li>Effectif : <em>à compléter</em></li><li>Service / équipe : <em>à compléter</em></li></ul></div>
+    <div class="card"><h3>Environnement technique</h3><ul><li>SQL Developer</li><li>SolarCube</li><li>DuckDB</li><li>UnitTest</li><li>Excel, VS Code</li><li>Docker (découverte)</li></ul></div>
+  </div>
+  <div class="todo">À compléter : ajoute un organigramme avec ta position dans l'équipe.</div>
+</section>
+
+<section id="missions">
+  <h2>Mes missions</h2>
+  <div class="card">
+    <h3>Traitement de données de banques européennes (stage chez Acceniom Consulting)</h3>
+    <div class="meta">Contexte : rapprochement de deux établissements bancaires</div>
+    <ul><li>Traitement et contrôle de la cohérence des données de banques étrangères en Europe, à chaque étape.</li><li>Interrogation et vérification des données avec SQL Developer et DuckDB.</li><li>Utilisation de SolarCube : <em>à préciser (son rôle dans ta mission)</em>.</li><li>Tests unitaires avec UnitTest (VS Code) ; découverte de Docker.</li><li>Identification et remontée des anomalies rencontrées lors des traitements.</li><li>Double écoute en support technique et participation aux réunions de suivi de projet.</li><li>Respect de la sécurité et de la confidentialité des données clients.</li></ul>
+    <div class="todo">À compléter pour chaque mission : objectif, ton rôle, outils, résultats obtenus, et captures d'écran anonymisées (aucun nom de client, aucune donnée réelle).</div>
+  </div>
+</section>
+
+<section id="projets">
+  <h2>Mes projets</h2>
+  <p>Pour chaque projet : contexte, besoins, environnement technique, mon rôle, résultats, et les documents joints.</p>
+  <div class="card">
+    <h3>Projet de 2ème année : HSP ou LPRS</h3>
+    <div class="meta">Projet principal – <em>à renseigner</em></div>
+    <ul>
+      <li>Contexte et besoins : <em>à compléter</em></li>
+      <li>Environnement technique (serveurs, réseau, services) : <em>à compléter</em></li>
+      <li>Mes missions personnelles : <em>à compléter</em></li>
+      <li>Documents : schéma réseau, cahier des charges, procédures, captures</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Projet de 1ère année</h3>
+    <div class="meta"><em>Titre à renseigner</em></div>
+    <p>Technologies pistes d'après ton CV : Debian, Apache, Hyper-V, VirtualBox, MySQL, WordPress, Git.</p>
+    <ul><li>Contexte, objectif, technologies, ton rôle, résultats : <em>à compléter</em></li></ul>
+  </div>
+</section>
+
+<section id="competences">
+  <h2>Mes compétences</h2>
+  <h3>Techniques</h3>
+  <ul class="chips"><li>Java</li><li>PHP</li><li>Python</li><li>HTML</li><li>SQL / MySQL</li><li>DuckDB</li><li>SolarCube</li><li>UnitTest</li><li>Git</li><li>Apache</li><li>Debian</li><li>Windows (droits NTFS)</li><li>Hyper-V</li><li>VirtualBox</li><li>WordPress</li><li>Docker (découverte)</li><li>Suite Office</li></ul>
+  <h3>Professionnelles</h3>
+  <ul class="chips"><li>Autonomie</li><li>Organisation</li><li>Esprit d'équipe</li><li>Écoute</li><li>Anglais B1</li></ul>
+  <div class="todo">À compléter : relie chaque compétence à un projet ou une situation précise (stage, projet HSP/LPRS…), comme demandé pour l'épreuve.</div>
+</section>
+
+<section id="synthese">
+  <h2>Mon tableau de synthèse</h2>
+  <p>Situations professionnelles et compétences du référentiel correspondantes.</p>
+  <div class="wrap"><table>
+    <thead><tr><th>Situation professionnelle</th><th>Période</th><th>Contexte</th><th>Compétences mobilisées</th><th>Preuves</th></tr></thead>
+    <tbody>
+      <tr><td>Migration de données clients</td><td>Mai 2026 – en cours</td><td>Stage, Acceniom Consulting</td><td><em>à compléter</em></td><td><a href="#missions">Missions</a></td></tr>
+      <tr><td>Projet HSP / LPRS</td><td>2025 – 2026</td><td>Formation</td><td><em>à compléter</em></td><td><a href="#projets">Projets</a></td></tr>
+      <tr><td><em>Autre situation</em></td><td></td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table></div>
+  <p><a class="btn" href="tableau_synthese.pdf">Télécharger le tableau (PDF)</a></p>
+</section>
+
+<section id="veille">
+  <h2>Ma veille technologique</h2>
+  <div class="grid">
+    <div class="card"><h3>Sujet</h3><p>Les GPU et l'IA : pourquoi le prix des cartes graphiques augmente.</p></div>
+    <div class="card"><h3>Problématique</h3><p>Pourquoi l'essor de l'IA fait-il augmenter le prix des cartes graphiques, et quelles conséquences pour un développeur ?</p></div>
+    <div class="card"><h3>Méthode et outils</h3><p><em>À compléter</em> : flux RSS, alertes, newsletters que tu utilises.</p></div>
+  </div>
+  <h3>L'essentiel</h3>
+  <ul>
+    <li>L'IA demande une puissance de calcul énorme. Un GPU l'apporte grâce à ses milliers d'unités de calcul (UAL) qui travaillent en parallèle, là où un processeur n'en a que quelques dizaines.</li>
+    <li>Les fabricants de mémoire (Samsung, SK hynix, Micron) privilégient la HBM, plus rentable, destinée aux centres de données d'IA.</li>
+    <li>La mémoire devient rare et chère, ce qui renchérit les cartes graphiques et les PC, au moins jusqu'en 2027 selon les industriels.</li>
+    <li>Exemple : la RTX 5090 est passée de 2 349 € au lancement à au moins 4 900 € en octobre 2026 (Frandroid).</li>
+  </ul>
+  <p><a class="btn" href="Veille_technologique_v2.docx">Télécharger ma veille complète</a></p>
+  <h3>Articles sélectionnés</h3>
+  <div class="wrap"><table>
+    <thead><tr><th>N°</th><th>Article</th><th>Source</th><th>Date</th></tr></thead>
+    <tbody><tr><td>1</td><td><a href="https://www.frandroid.com/produits-android/hardware/3280565_nvidia-arreterait-la-rtx-5090-pour-reserver-sa-puce-aux-cartes-professionnelles-bien-plus-rentables" target="_blank" rel="noopener">Nvidia arrêterait la RTX 5090 pour réserver sa puce aux cartes professionnelles</a></td><td>Frandroid</td><td>10/10/2026</td></tr><tr><td>2</td><td><a href="https://www.ginjfo.com/actualites/composants/cartes-graphiques/geforce-rtx-5090-des-palettes-entieres-terminent-dans-des-serveurs-ia-au-lieu-des-pc-gaming-20260914" target="_blank" rel="noopener">GeForce RTX 5090 : des palettes entières terminent dans des serveurs IA</a></td><td>GinjFo</td><td>14/09/2026</td></tr><tr><td>3</td><td><a href="https://invezz.com/fr/actualites/2026/10/01/samsung-et-sk-hynix-reprennent-du-terrain-apres-micron-mais-les-investisseurs-ignorent-lavertissement-de-24-ans/" target="_blank" rel="noopener">Samsung et SK Hynix reprennent du terrain après Micron</a></td><td>Invezz</td><td>01/10/2026</td></tr><tr><td>4</td><td><a href="https://hardware.developpez.com/actu/385962/La-capacite-de-memoire-DRAM-pour-toute-l-annee-2027-a-deja-ete-reservee-et-vendue-la-demande-liee-a-l-IA-limitera-l-offre-pour-les-PC-les-ordinateurs-portables-et-les-smartphones/" target="_blank" rel="noopener">La capacité de mémoire DRAM pour toute l'année 2027 a déjà été réservée</a></td><td>Developpez.com</td><td>Août 2026</td></tr><tr><td>5</td><td><a href="https://fr.vgtimes.com/tech-and-hardware/167026-les-stocks-de-mmoire-de-samsung-et-sk-hynix-tombent-en-dessous-de-10-jours-en-raison-de-la-demande-dia.html" target="_blank" rel="noopener">Les stocks de mémoire de Samsung et SK Hynix tombent en dessous de 10 jours</a></td><td>VGTimes</td><td>Sept. 2026</td></tr><tr><td>6</td><td><a href="https://www.materiel-gamer.com/penurie-de-memoire-samsung-sk-hynix-et-micron-poursuivis-aux-etats-unis-la-ram-pourrait-presque-doubler-dici-fin-2026/" target="_blank" rel="noopener">Pénurie de RAM 2026 : procès contre Samsung, SK hynix et Micron</a></td><td>Matériel-Gamer</td><td>Juil. 2026</td></tr><tr><td>7</td><td><a href="https://finance.yahoo.com/sectors/technology/articles/samsung-sk-hynix-warn-ai-144657780.html" target="_blank" rel="noopener">Samsung and SK hynix warn AI-driven memory shortages could last until 2027</a></td><td>Yahoo Finance</td><td>30/04/2026</td></tr><tr><td>8</td><td><a href="https://www.ginjfo.com/actualites/composants/cartes-graphiques/ou-est-passee-la-rtx-5090-les-stocks-disparaissent-et-les-prix-senvolent-20260121" target="_blank" rel="noopener">Où est passée la RTX 5090 ? Les stocks disparaissent et les prix s'envolent</a></td><td>GinjFo</td><td>21/01/2026</td></tr><tr><td>9</td><td><a href="https://leclaireur.fnac.com/article/646697-pourquoi-le-prix-des-cartes-graphiques-risque-t-il-daugmenter/" target="_blank" rel="noopener">Pourquoi le prix des cartes graphiques risque-t-il d'augmenter ?</a></td><td>L'Éclaireur Fnac</td><td>Déc. 2025</td></tr><tr><td>10</td><td><a href="https://global.techradar.com/fr-fr/pro/les-prix-des-pc-vont-exploser-en-2026-alertent-les-experts" target="_blank" rel="noopener">« Les prix des PC vont exploser en 2026 » alertent les experts</a></td><td>TechRadar</td><td>Début 2026</td></tr><tr><td>11</td><td><a href="https://perso.ensta-paris.fr/~tajchman/Seance05/Cours_I03_GPU.pdf" target="_blank" rel="noopener">Cours GPU : différences CPU/GPU (ENSTA Paris)</a></td><td>ENSTA Paris</td><td>Référence</td></tr><tr><td>12</td><td><a href="https://cvw.cac.cornell.edu/gpu-architecture/gpu-characteristics/design" target="_blank" rel="noopener">GPU Characteristics : design (Cornell Virtual Workshop)</a></td><td>Cornell University</td><td>Référence</td></tr></tbody>
+  </table></div>
+</section>
+
+<section id="cv">
+  <h2>Mon CV</h2>
+  <p>Mon CV est à jour et cohérent avec le parcours présenté à l'oral.</p>
+  <p><a class="btn" href="CV_Rayan_Mohammad.pdf">Télécharger mon CV (PDF)</a></p>
+  <div class="todo">Dépose le fichier PDF dans le même dossier que ce site, sous le nom CV_Rayan_Mohammad.pdf. Conseil : publie une version sans adresse postale ni téléphone si le portfolio est public.</div>
+</section>
+
+<section id="contact">
+  <h2>Contact et liens utiles</h2>
+  <div class="card"><ul>
+    <li>E-mail : <a href="mailto:ybo9835@gmail.com">ybo9835@gmail.com</a></li>
+    <li>LinkedIn : <em>à ajouter</em></li>
+    <li>GitHub : <a href="https://github.com/RayanBackupGit" target="_blank" rel="noopener">github.com/RayanBackupGit</a></li>
+  </ul></div>
+</section>
+
+<section id="mentions">
+  <h2>Mentions légales</h2>
+  <div class="card"><ul>
+    <li><strong>Éditeur et directeur de la publication :</strong> Rayan Chanh-Mohammad, étudiant en BTS SIO option SLAM, lycée Robert Schuman, Dugny. Contact : <a href="mailto:ybo9835@gmail.com">ybo9835@gmail.com</a>.</li>
+    <li><strong>Hébergeur :</strong> GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis (GitHub Pages).</li>
+    <li><strong>Objet du site :</strong> portfolio réalisé dans un cadre pédagogique, pour l'épreuve E5 du BTS SIO.</li>
+    <li><strong>Données personnelles :</strong> ce site ne collecte aucune donnée et n'utilise pas de cookies de suivi.</li>
+    <li><strong>Confidentialité :</strong> aucune donnée interne ou confidentielle d'entreprise n'est publiée.</li>
+  </ul></div>
+</section>
+<footer>Portfolio réalisé pour l'épreuve E5 du BTS SIO. Aucune donnée confidentielle d'entreprise n'est publiée.</footer>
+</main>
+</div>
+<script>
+(function(){
+  var secs=[].slice.call(document.querySelectorAll("section"));
+  var ids=secs.map(function(s){return s.id});
+  function show(h){
+    if(ids.indexOf(h)<0)h="accueil";
+    secs.forEach(function(s){s.classList.toggle("on",s.id===h)});
+    [].forEach.call(document.querySelectorAll("nav a"),function(a){
+      if(a.getAttribute("href")==="#"+h)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");
+    });
+    try{history.replaceState(null,"","#"+h)}catch(e){}
+    window.scrollTo(0,0);
+  }
+  document.addEventListener("click",function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(!a)return;
+    e.preventDefault();
+    show(a.getAttribute("href").slice(1));
+  });
+  window.addEventListener("hashchange",function(){show(location.hash.slice(1))});
+  show((location.hash||"#accueil").slice(1));
+})();
+</script>
+</body>
+</html>
