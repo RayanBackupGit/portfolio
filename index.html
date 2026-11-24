@@ -97,7 +97,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
     <p>Société de conseil. Ma mission de consulting porte sur le traitement de données de banques étrangères en Europe, dans le cadre d'un projet de fusion et de migration.</p>
   </div>
   <div class="grid">
-    <div class="card"><h3>Fiche entreprise</h3><ul><li>Activité : conseil</li><li>Localisation : Paris</li><li>Effectif : <em>à compléter</em></li><li>Service / équipe : <em>à compléter</em></li></ul></div>
+    <div class="card"><h3>Fiche entreprise</h3><ul><li>Activité : conseil</li><li>Localisation : Paris</li><li>Effectif : <em>à compléter</em></li><li>Maître de stage : Hugo</li><li>Équipe : Chaimaa, assistant RH</li></ul></div>
     <div class="card"><h3>Environnement technique</h3><ul><li>SQL Developer</li><li>SolarCube</li><li>DuckDB</li><li>UnitTest</li><li>Excel, VS Code</li><li>Docker (découverte)</li></ul></div>
   </div>
   <div class="todo">À compléter : ajoute un organigramme avec ta position dans l'équipe.</div>
@@ -131,7 +131,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
     <div class="meta">Projet de 1ère année – travail en équipe</div>
     <p>Site d'aide aux étudiants : inscription et connexion (étudiants et médecins), prise de rendez-vous avec des médecins via Calendly, événements, dons et page de contact.</p>
     <ul class="chips"><li>PHP</li><li>MySQL (PDO)</li><li>HTML / CSS</li><li>Calendly</li></ul>
-    <ul><li>Mots de passe hachés (<code>password_hash</code>) et requêtes préparées PDO.</li><li>Base de données de 8 tables.</li><li>Ma part : <em>à compléter</em></li></ul>
+    <ul><li>Mots de passe hachés (<code>password_hash</code>) et requêtes préparées PDO.</li><li>Base de données de 8 tables.</li><li><strong>Ma part :</strong> les événements (page d'événement et calendrier interactif).</li></ul>
     <p><a href="https://github.com/WilliamLemaire06/SOS_-tudiants" target="_blank" rel="noopener">Voir le dépôt GitHub</a></p>
   </div>
   <div class="card">
@@ -139,7 +139,7 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
     <div class="meta">Projet de 1ère année – travail en équipe</div>
     <p>Site de gestion de cinéma avec trois rôles (client, accueil, administrateur) : films et séances, réservation en trois tarifs avec code promo, encaissement à la caisse, administration des films, séances, salles, utilisateurs et codes promo.</p>
     <ul class="chips"><li>PHP orienté objet</li><li>MySQL (PDO)</li><li>Bootstrap</li><li>Git / GitHub</li></ul>
-    <ul><li>Architecture en modèles et « repositories », requêtes préparées, mots de passe hachés.</li><li>Base de données de 6 tables.</li><li>Ma part : <em>à compléter</em></li></ul>
+    <ul><li>Architecture en modèles et « repositories », requêtes préparées, mots de passe hachés.</li><li>Base de données de 6 tables.</li><li><strong>Ma part :</strong> la gestion des tickets, c'est-à-dire des réservations (réserver, consulter, modifier).</li></ul>
     <p><a href="https://github.com/AmineBess254/projet-cinema" target="_blank" rel="noopener">Voir le dépôt GitHub</a></p>
   </div>
 </section>
@@ -147,10 +147,13 @@ footer{margin-top:60px;color:var(--muted);font-size:14px}
 <section id="competences">
   <h2>Mes compétences</h2>
   <h3>Techniques</h3>
-  <ul class="chips"><li>Java</li><li>PHP</li><li>Python</li><li>HTML</li><li>SQL / MySQL</li><li>DuckDB</li><li>SolarCube</li><li>UnitTest</li><li>Git</li><li>Apache</li><li>Debian</li><li>Windows (droits NTFS)</li><li>Hyper-V</li><li>VirtualBox</li><li>WordPress</li><li>Docker (découverte)</li><li>Suite Office</li></ul>
+  <div class="wrap"><table><thead><tr><th>Compétence</th><th>Où je l'ai utilisée</th></tr></thead><tbody><tr><td><strong>SQL / MySQL</strong></td><td>Stage : requêtes et vérification des données avec SQL Developer. SOS Étudiants (8 tables) et Ciné Lumière (6 tables) : bases MySQL.</td></tr><tr><td><strong>DuckDB, SolarCube</strong></td><td>Stage chez Acceniom Consulting : traitement de données de banques étrangères en Europe.</td></tr><tr><td><strong>UnitTest, Python</strong></td><td>Stage : tests unitaires pour vérifier mes traitements de données (sous VS Code).</td></tr><tr><td><strong>PHP, PDO</strong></td><td>SOS Étudiants : les événements. Ciné Lumière : la gestion des tickets, c'est-à-dire des réservations.</td></tr><tr><td><strong>PHP orienté objet</strong></td><td>Ciné Lumière : architecture en modèles et « repositories ».</td></tr><tr><td><strong>HTML, CSS, Bootstrap</strong></td><td>SOS Étudiants : page d'événement et calendrier. Ciné Lumière : interface en Bootstrap. Ce portfolio.</td></tr><tr><td><strong>Git, GitHub</strong></td><td>Ciné Lumière : travail en équipe avec commits et fusions. Ce portfolio, hébergé avec GitHub Pages.</td></tr><tr><td><strong>Excel</strong></td><td>Stage : vérification et exploitation des données.</td></tr><tr><td><strong>Docker</strong> (découverte)</td><td>Stage : première prise en main.</td></tr></tbody></table></div>
   <h3>Professionnelles</h3>
-  <ul class="chips"><li>Autonomie</li><li>Organisation</li><li>Esprit d'équipe</li><li>Écoute</li><li>Anglais B1</li></ul>
-  <div class="todo">À compléter : relie chaque compétence à un projet ou une situation précise (stage, projet HSP/LPRS…), comme demandé pour l'épreuve.</div>
+  <div class="wrap"><table><thead><tr><th>Compétence</th><th>Situation</th></tr></thead><tbody><tr><td><strong>Autonomie</strong></td><td>Stage : traitement de données en consulting, avec mon maître de stage Hugo comme référent.</td></tr><tr><td><strong>Organisation</strong></td><td>Intérim chez Zara, Massimo Dutti et Stradivarius : stocks, mise en rayon, préparation des soldes. Carrefour City : commandes Drive.</td></tr><tr><td><strong>Esprit d'équipe</strong></td><td>Projets de groupe SOS Étudiants et Ciné Lumière ; stage avec Hugo et Chaimaa ; adaptation à plusieurs équipes en intérim.</td></tr><tr><td><strong>Écoute</strong></td><td>Stage : double écoute en support technique. Accueil et conseil des clients en magasin.</td></tr><tr><td><strong>Anglais (B1)</strong></td><td>Veille technologique : lecture d'articles en anglais (Yahoo Finance, Cornell).</td></tr></tbody></table></div>
+  <h3>Compétences du référentiel</h3>
+  <div class="wrap"><table><thead><tr><th>Compétence du référentiel</th><th>Preuve</th></tr></thead><tbody><tr><td>Répondre aux incidents et aux demandes d'assistance</td><td>Stage : double écoute en support technique, diagnostic et traitement des demandes.</td></tr><tr><td>Travailler en mode projet</td><td>Stage : réunions de suivi et contrôle de chaque étape. Projets d'équipe avec Git.</td></tr><tr><td>Développer la présence en ligne</td><td>Ce portfolio en ligne (GitHub Pages), avec ses mentions légales.</td></tr><tr><td>Organiser son développement professionnel</td><td>Veille technologique sur les GPU et l'IA, avec 12 articles sourcés.</td></tr><tr><td>Mettre à disposition un service informatique</td><td><em>À compléter avec le projet HSP / LPRS.</em></td></tr><tr><td>Gérer le patrimoine informatique</td><td><em>À compléter (inventaire, habilitations, sauvegardes).</em></td></tr></tbody></table></div>
+  <p>Les compétences suivantes sont aussi dans mon parcours : Java, Apache, Debian, Windows (droits NTFS), Hyper-V, VirtualBox, WordPress. <em>À relier à un projet de formation (HSP / LPRS, TP).</em></p>
+  <p><a class="btn" href="#synthese">Voir mon tableau de synthèse</a></p>
 </section>
 
 <section id="synthese">
